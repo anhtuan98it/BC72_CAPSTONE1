@@ -393,6 +393,13 @@ button#trigger-overlay {
     text-align: center;
 }
 
+.number_item:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+        rgba(71, 63, 79, 0.16) 0px 5px 10px;
+    transition: 0.3s ease;
+}
+
 .number_item i {
     background-color: #ff6600;
     font-size: 26px;
@@ -413,4 +420,86 @@ button#trigger-overlay {
 
 .number_item p {
     font-weight: 600;
+}
+
+/* homepage-video */
+.container_homepageVideo {
+    width: 100%;
+    padding: 0 340px;
+}
+
+.homepage-video .video_info {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    text-align: center;
+    z-index: 1;
+    display: grid;
+    border-radius: 6px;
+}
+
+.homepage-video .video_info::before {
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    min-height: 100%;
+    border-radius: 6px;
+}
+
+.homepage-video span.video-play-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 76px;
+    font-size: 26px;
+    border-radius: 50%;
+    background: white;
+    color: #ff6600;
+    border: transparent;
+    text-align: center;
+    padding-left: 2px;
+    transition: 0.3s ease-in-out;
+    margin-top: 200px;
+    animation: ripple 1s linear infinite;
+}
+
+/* tạo animate cho play icon */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}
+
+.homepage-video span.video-play-icon:hover {
+    transform: scale(1.2);
+    color: white;
+    background: #ff6600;
+    border: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+#small_dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+
+}
+
+.mfp-hide {
+    display: none !important;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
 }
