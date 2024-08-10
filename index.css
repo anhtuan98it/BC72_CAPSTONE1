@@ -503,3 +503,142 @@ div#small-dialog iframe {
     display: block;
     border-radius: 10px;
 }
+
+/* Dinner blogs */
+.dinner-blog {
+    background: #f7f7f7;
+}
+
+.header_blog .title-subhny {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ff6600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    display: block;
+    font-family: 'Pacifico',
+        cursive;
+    ;
+}
+
+.container_blog {
+    width: 100%;
+    padding-left: 320px;
+    padding-right: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header_blog .title-w3l {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.dinner-blog .item-list-blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-blog {
+    width: 31.5%;
+    margin-top: 30px;
+}
+
+
+.header_blog .card-blog {
+    word-wrap: break-word;
+    background: transparent;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 6px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.post-pos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.post-pos a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.post-pos a:hover {
+    color: #5431ac
+}
+
+.card_body .blog-desc {
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+.blog-footer-left img {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.blog-footer-left-text {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.blog-footer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-footer-left {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: flex-start;
+}
+
+.blog-footer-right {
+    margin-left: 150px;
+}
+
+
+
+.blog-footer-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    transition: 0.5s ease-in-out;
+}
+
+.blog-footer-right span {
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.blog-footer-right a:hover {
+    color: #ff6600;
+    transition: 0.5s ease-in-out;
+}
