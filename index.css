@@ -722,3 +722,148 @@ div#small-dialog iframe {
 .owl-dot.active span {
     background-color: #ff6600 !important;
 }
+
+/* footer */
+footer {
+    background: #000;
+    color: white;
+}
+
+.item-list-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer {
+    padding: 80px 340px;
+}
+
+.item-list-footer a {
+    text-decoration: none;
+}
+
+.title-footer {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.item-footer p {
+    color: #a5a2a1;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: #ff6600;
+    background-color: white;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.footer-social a:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+.Categories-footer h6,
+.Archives-footer h6,
+.Subscribe-footer h6 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 28px;
+    transition: 0.5s all;
+}
+
+.Categories-footer a,
+.Archives-footer a,
+.Subscribe-footer p {
+    color: #a5a2a1;
+}
+
+.Categories-footer a:hover,
+.Archives-footer a:hover,
+.title-footer:hover {
+    color: #ff6600;
+    transition: 0.5s all;
+}
+
+.Subscribe-footer input {
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 28px;
+    border: solid transparent;
+}
+
+.Subscribe-footer button {
+    padding: 12px 45px;
+    background-color: #ff6600;
+    border: none;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+
+.Subscribe-footer button:hover {
+    opacity: 0.8;
+    background-color: #ff6600;
+
+}
+
+/* Copyright */
+.copyright {
+    background-color: #000;
+}
+
+.container-copyright {
+    padding: 20px 320px;
+}
+
+.container-copyright p {
+    color: #ddd;
+    font-size: 17px;
+}
+
+.container-copyright a {
+    text-decoration: none;
+    color: #ff6600;
+    transition: 0.5s;
+}
+
+.container-copyright a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+/* BacktoTop */
+.Backtotop {
+    display: block;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 99;
+    color: white;
+    background-color: #ff6600;
+    width: 50px;
+    height: 50px;
+    line-height: 36px;
+    border-radius: 35px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.Backtotop i {
+    padding-top: 20px;
+}
