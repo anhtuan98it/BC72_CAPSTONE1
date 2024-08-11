@@ -509,7 +509,7 @@ div#small-dialog iframe {
     background: #f7f7f7;
 }
 
-.header_blog .title-subhny {
+.title-subhny {
     font-size: 20px;
     font-weight: 400;
     color: #ff6600;
@@ -529,7 +529,7 @@ div#small-dialog iframe {
     margin-left: auto;
 }
 
-.header_blog .title-w3l {
+.title-w3l {
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
@@ -573,6 +573,7 @@ div#small-dialog iframe {
 .post-pos a {
     color: #ff6600;
     text-decoration: none;
+    transition: 0.5s all;
 }
 
 .post-pos a:hover {
@@ -641,4 +642,83 @@ div#small-dialog iframe {
 .blog-footer-right a:hover {
     color: #ff6600;
     transition: 0.5s ease-in-out;
+}
+
+
+/* Dinner agency */
+.header-agency {
+    text-align: center !important;
+}
+
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#testimonials .title-w3l {
+    margin-bottom: 50px;
+}
+
+.container_agency {
+    padding: 0 300px;
+    text-align: center;
+}
+
+
+.owl-carousel .owl-stage {
+    position: relative;
+    touch-action: manipulation;
+}
+
+.testimonial a.comment-agency {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+}
+
+#testimonials span.fa.fa-quote-left {
+    color: #ff6600;
+    font-size: 25px;
+    display: block;
+}
+
+
+
+.testimonial blockquote q {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.testimonial p {
+    color: #232121;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Quicksand',
+        sans-serif;
+}
+
+.people-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.people-info .indentity {
+    opacity: 0.6;
+}
+
+.owl-dots .owl-dot:hover span {
+    background: #ff6600 !important;
+}
+
+.owl-dot.active span {
+    background-color: #ff6600 !important;
 }
