@@ -393,6 +393,13 @@ button#trigger-overlay {
     text-align: center;
 }
 
+.number_item:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+        rgba(71, 63, 79, 0.16) 0px 5px 10px;
+    transition: 0.3s ease;
+}
+
 .number_item i {
     background-color: #ff6600;
     font-size: 26px;
@@ -413,4 +420,450 @@ button#trigger-overlay {
 
 .number_item p {
     font-weight: 600;
+}
+
+/* homepage-video */
+.container_homepageVideo {
+    width: 100%;
+    padding: 0 340px;
+}
+
+.homepage-video .video_info {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    text-align: center;
+    z-index: 1;
+    display: grid;
+    border-radius: 6px;
+}
+
+.homepage-video .video_info::before {
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    min-height: 100%;
+    border-radius: 6px;
+}
+
+.homepage-video span.video-play-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 76px;
+    font-size: 26px;
+    border-radius: 50%;
+    background: white;
+    color: #ff6600;
+    border: transparent;
+    text-align: center;
+    padding-left: 2px;
+    transition: 0.3s ease-in-out;
+    margin-top: 200px;
+    animation: ripple 1s linear infinite;
+}
+
+/* tạo animate cho play icon */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}
+
+.homepage-video span.video-play-icon:hover {
+    transform: scale(1.2);
+    color: white;
+    background: #ff6600;
+    border: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+#small_dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+
+}
+
+.mfp-hide {
+    display: none !important;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Dinner blogs */
+.dinner-blog {
+    background: #f7f7f7;
+}
+
+.title-subhny {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ff6600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    display: block;
+    font-family: 'Pacifico',
+        cursive;
+    ;
+}
+
+.container_blog {
+    width: 100%;
+    padding-left: 320px;
+    padding-right: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title-w3l {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.dinner-blog .item-list-blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-blog {
+    width: 31.5%;
+    margin-top: 30px;
+}
+
+
+.header_blog .card-blog {
+    word-wrap: break-word;
+    background: transparent;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 6px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.post-pos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.post-pos a {
+    color: #ff6600;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.post-pos a:hover {
+    color: #5431ac
+}
+
+.card_body .blog-desc {
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+.blog-footer-left img {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.blog-footer-left-text {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.blog-footer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-footer-left {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: flex-start;
+}
+
+.blog-footer-right {
+    margin-left: 150px;
+}
+
+
+
+.blog-footer-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    transition: 0.5s ease-in-out;
+}
+
+.blog-footer-right span {
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.blog-footer-right a:hover {
+    color: #ff6600;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Dinner agency */
+.header-agency {
+    text-align: center !important;
+}
+
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#testimonials .title-w3l {
+    margin-bottom: 50px;
+}
+
+.container_agency {
+    padding: 0 300px;
+    text-align: center;
+}
+
+
+.owl-carousel .owl-stage {
+    position: relative;
+    touch-action: manipulation;
+}
+
+.testimonial a.comment-agency {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+}
+
+#testimonials span.fa.fa-quote-left {
+    color: #ff6600;
+    font-size: 25px;
+    display: block;
+}
+
+
+
+.testimonial blockquote q {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.testimonial p {
+    color: #232121;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Quicksand',
+        sans-serif;
+}
+
+.people-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.people-info .indentity {
+    opacity: 0.6;
+}
+
+.owl-dots .owl-dot:hover span {
+    background: #ff6600 !important;
+}
+
+.owl-dot.active span {
+    background-color: #ff6600 !important;
+}
+
+/* footer */
+footer {
+    background: #000;
+    color: white;
+}
+
+.item-list-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer {
+    padding: 80px 340px;
+}
+
+.item-list-footer a {
+    text-decoration: none;
+}
+
+.title-footer {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.item-footer p {
+    color: #a5a2a1;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: #ff6600;
+    background-color: white;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.footer-social a:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+.Categories-footer h6,
+.Archives-footer h6,
+.Subscribe-footer h6 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 28px;
+    transition: 0.5s all;
+}
+
+.Categories-footer a,
+.Archives-footer a,
+.Subscribe-footer p {
+    color: #a5a2a1;
+}
+
+.Categories-footer a:hover,
+.Archives-footer a:hover,
+.title-footer:hover {
+    color: #ff6600;
+    transition: 0.5s all;
+}
+
+.Subscribe-footer input {
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 28px;
+    border: solid transparent;
+}
+
+.Subscribe-footer button {
+    padding: 12px 45px;
+    background-color: #ff6600;
+    border: none;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+
+.Subscribe-footer button:hover {
+    opacity: 0.8;
+    background-color: #ff6600;
+
+}
+
+/* Copyright */
+.copyright {
+    background-color: #000;
+}
+
+.container-copyright {
+    padding: 20px 320px;
+}
+
+.container-copyright p {
+    color: #ddd;
+    font-size: 17px;
+}
+
+.container-copyright a {
+    text-decoration: none;
+    color: #ff6600;
+    transition: 0.5s;
+}
+
+.container-copyright a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+/* BacktoTop */
+.Backtotop {
+    display: block;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 99;
+    color: white;
+    background-color: #ff6600;
+    width: 50px;
+    height: 50px;
+    line-height: 36px;
+    border-radius: 35px;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.Backtotop i {
+    padding-top: 20px;
 }
