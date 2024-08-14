@@ -329,7 +329,7 @@ button#trigger-overlay {
 
 .content_homepagecover {
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .content_homepagecover h3 {
@@ -381,10 +381,6 @@ button#trigger-overlay {
 }
 
 
-.container_number {
-    margin: 0 350px;
-}
-
 .number_item {
     background-color: white;
     box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
@@ -423,19 +419,15 @@ button#trigger-overlay {
 }
 
 /* homepage-video */
-.container_homepageVideo {
-    width: 100%;
-    padding: 0 340px;
-}
 
 .homepage-video .video_info {
-    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     min-height: 500px;
+    position: relative;
     text-align: center;
     z-index: 1;
     display: grid;
+    min-height: 500px;
     border-radius: 6px;
 }
 
@@ -449,6 +441,12 @@ button#trigger-overlay {
     z-index: -1;
     min-height: 100%;
     border-radius: 6px;
+}
+
+.homepage-video .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
 }
 
 .homepage-video span.video-play-icon {
@@ -500,8 +498,57 @@ button#trigger-overlay {
 
 div#small-dialog iframe {
     width: 100%;
+    height: 420px;
     display: block;
     border-radius: 10px;
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.95;
+}
+
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    transform: scale(3);
+}
+
+.mfp-close {
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 0 18px 10px;
+    color: #fff;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace;
+    background: transparent;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
+
+button.mfp-close,
+button.mfp-arrow {
+    overflow: visible;
+    cursor: pointer;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: none;
+    padding: 0;
+    z-index: 1046;
+    box-shadow: none;
+    touch-action: manipulation;
 }
 
 /* Dinner blogs */
@@ -521,13 +568,6 @@ div#small-dialog iframe {
     ;
 }
 
-.container_blog {
-    width: 100%;
-    padding-left: 320px;
-    padding-right: 320px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .title-w3l {
     font-size: 38px;
@@ -734,9 +774,6 @@ footer {
     justify-content: space-between;
 }
 
-.container-footer {
-    padding: 80px 340px;
-}
 
 .item-list-footer a {
     text-decoration: none;
@@ -826,22 +863,18 @@ footer {
     background-color: #000;
 }
 
-.container-copyright {
-    padding: 20px 320px;
-}
-
-.container-copyright p {
+.copyright p {
     color: #ddd;
     font-size: 17px;
 }
 
-.container-copyright a {
+.copyright a {
     text-decoration: none;
     color: #ff6600;
     transition: 0.5s;
 }
 
-.container-copyright a:hover {
+.copyright a:hover {
     color: white;
     transition: 0.5s;
 }
