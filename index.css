@@ -482,7 +482,7 @@ button#trigger-overlay {
     transition: all 0.4s;
 }
 
-.dinner-category.dark {
+.dinner-category.dark-mode {
     background: #282828;
     color: #eee;
 }
@@ -630,7 +630,10 @@ button#trigger-overlay {
     position: relative;
     z-index: 10;
 }
-
+.number.dark-mode {
+    background: #232220 !important;
+    color: #c2d0da;
+}
 
 .number_item {
     background-color: white;
@@ -735,6 +738,11 @@ button#trigger-overlay {
     border: transparent;
     transition: 0.3s ease-in-out;
 }
+.homepage-video.dark-mode {
+    background: #232220 ;
+    color: #c2d0da;
+    
+}
 
 #small_dialog {
     max-width: 750px;
@@ -805,6 +813,10 @@ button.mfp-arrow {
 /* Dinner blogs */
 .dinner-blog {
     background: #f7f7f7;
+}
+.dinner-blog.dark-mode {
+    background: #232220 !important;
+    color: #c2d0da;
 }
 
 .title-subhny {
@@ -995,6 +1007,11 @@ button.mfp-arrow {
     line-height: 28px;
     font-family: 'Quicksand',
         sans-serif;
+}
+
+#testimonials.dark-mode{
+    background: #232220 !important;
+    color: #c2d0da;
 }
 
 .people-info h3 {
